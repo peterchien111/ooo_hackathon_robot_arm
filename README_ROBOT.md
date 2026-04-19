@@ -55,7 +55,7 @@ Note the port (e.g. `/dev/tty.usbmodem585A0076841` on Mac, `/dev/ttyACM0` on Lin
 
 > **Linux only:** you may need to run `sudo chmod 666 /dev/ttyACM0` first.
 
-### 2. Set motor IDs
+### 2. Set motor IDs (already done, skip this)
 Connect each motor **one at a time** to the controller board:
 ```bash
 uv run lerobot-setup-motors \
@@ -100,7 +100,7 @@ uv run python move.py
 
 To add your own positions, edit the `POSITIONS` dict in `move.py`. Run `list` to see current joint values to copy.
 
-### Keyboard teleoperation
+### Keyboard teleoperation (i don't think this works yet but don't really need this)
 ```bash
 uv run python keyboard_teleop.py
 ```
